@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divine Paradise</title>
+    <link rel="icon" href="images/icon2.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+     *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     }
+     .name{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        width: 100%;
+     }
+    .h1{
+        font-size: xx-large;
+        font-weight: bold;
+        font-style: italic;
+        display: flex;
+        margin-left: 600px;
+     }
+     .iconnav{
+        text-decoration: none;
+        font-size: 15px;
+        position: relative;
+        margin-right: 30px;
+   }
+    .badge{
+        position: absolute;
+        top: -10px;
+        right: -8px;
+        padding: 5px 10px;
+        border-radius: 50%;
+        background: red;
+        color: white;
+    }
+     .navpic{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        justify-content: space-between;
+        align-items: center;
+     }
+     .content{
+        margin: 30px;
+
+     }
+     .img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+     }
+    .para{
+        margin-top: 20px;
+        margin-left: 10px;
+     }
+     .container {
+         position: relative;
+         width: 50%;
+         max-width: 400px;
+         max-height: 600px;
+     }
+    .image {
+        display: block;
+        width: 100%;
+        height: auto;
+     }
+    .overlay {
+         position: absolute; 
+         bottom: 0; 
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5); /* Black see-through */
+        color: #f1f1f1; 
+        width: 100%;
+        transition: .5s ease;
+        opacity:0;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+    .container:hover .overlay {
+        opacity: 1;
+    }
+    .gallery{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    .contents{
+       width: 300px;
+       margin: 15px;
+       box-sizing: border-box;
+       float: left;
+       text-align: center;
+       border-radius: 20px;
+       cursor: pointer;
+       padding-top: 10px;
+       box-shadow: 0 14px 20px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22);
+       transition: .4s;
+       background: #f2f2f2;
+    }
+    .contents:hover{
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),0 3px 6px rgba(0, 0, 0, 0.23);
+       transform: translate(0px,-20px);
+    }
+    .fl{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .heart:hover{
+        background-color: red;
+    }
+    img{
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        padding: 20px;
+    }
+    p{
+        text-align: center;
+        padding-top: 0 8px;
+    }
+    h6{
+        font-size: 26px;
+        text-align: center;
+        margin: 0;
+        padding: 5px;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        padding-left: 20%;
+        margin: 7px;
+    }
+    .star{
+        margin: 5px;
+        transition: .4s;
+    }
+    .buy{
+        margin: 10px;
+    }
+    
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="name">
+        <div class="h1">Flowers</div>
+        <a href="#" class="iconnav"><box-icon name='shopping-bag'size="md"></box-icon><br><span class="badge" color="black">0</span>Cart</a>
+        </div>
+        <div class="navpic">
+            <div class="content">
+               <a href="#garland"><img src="images/yelow with orange.jpg" alt="" class="img"></a><br>
+               <p class="para">Garland</p>
+            </div>
+            <div class="content">
+               <a href="#Basket of flower"><img src="images/basket of love.jpg" alt="" class="img"></a>
+               <p class="para">Basket of flower</p>
+           </div>
+            <div class="content">
+               <a href="#flowerRings"><img src="images/white decor flo.jpg" alt="" class="img"></a>
+               <p class="para">Flower Rings</p>
+           </div>
+            <div class="content">
+               <a href="#Bouquet"><img src="images/citrus&red roses.jpg" alt="" class="img"></a>
+               <p class="para">Bouquet</p>
+           </div>
+            <div class="content">
+               <a href="#Single flower"><img src="images/sky blue rose.jpg" alt="" class="img"></a>
+               <p class="para">Single Flower</p>
+           </div>
+       </div>
+    </header>
+    <div class="garland" id="garland">
+        <h2 style="font-style: italic;">Garland</h2>
+    <div class="gallery">
+        <div class="contents">
+            <div class="fl">
+                <h3>Garland</h3>
+                <span class="heart"><box-icon name='heart' color="black" ></box-icon></span>
+            </div>
+            <img src="images/marrige garland.jpg" alt="" width="200px" height="200px">
+            <p>Garland for marrige</p>
+            <h6>Rs. 400/-</h6>
+            <ul>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+            </ul>
+            <button class="buy">Add to Cart</button>
+        </div>
+    
+        <div class="contents">
+            <div class="fl">
+                <h3>Orange garland</h3>
+                <box-icon name='heart' color="black" ></box-icon>
+            </div>
+            <img src="images/orange.jpg" alt="" width="200px" height="200px">
+            <p>Orange garland</p>
+            <h6>Rs. 500/-</h6>
+            <ul>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+            </ul>
+            <button class="buy">Add to Cart</button>
+        </div>
+
+    
+        <div class="contents">
+            <div class="fl">
+                <h3>White  with pink</h3>
+                <box-icon name='heart' color="black" ></box-icon>
+            </div>
+            <img src="images/pink garland.jpg" alt=""  width="200px" height="200px">
+            <p>Modern wedding special</p>
+            <h6>Rs. 800/-</h6>
+            <ul>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+            </ul>
+            <button class="buy">Add to Cart</button>
+        </div>
+
+        <div class="contents">
+            <div class="fl">
+                <h3>Rose garland</h3>
+                <box-icon name='heart' color="black" ></box-icon>
+            </div>
+            <img src="images/rose only.jpg" alt=""  width="200px" height="200px">
+            <p>Rose gives the love</p>
+            <h6>Rs. 600/-</h6>
+            <ul>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+            </ul>
+            <button class="buy">Add to Cart</button>
+        </div>
+
+        <div class="contents">
+            <div class="fl">
+                <h3>Yellow with orange</h3>
+                <box-icon name='heart' color="black" ></box-icon>
+            </div>
+            <img src="images/yelow with orange.jpg" alt=""  width="200px" height="200px">
+            <p>New day start with yellow ang orange flower </p>
+            <h6>Rs. 1200/-</h6>
+            <ul>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+            </ul>
+            <button class="buy">Add to Cart</button>
+        </div>
+
+        <div class="contents">
+            <div class="fl">
+                <h3>Stylish red</h3>
+                <box-icon name='heart' color="black" ></box-icon>
+            </div>
+            <img src="images/red with rose.jpg" alt=""  width="200px" height="200px">
+            <p>Weds for a partner with Stylish</p>
+            <h6>Rs. 1500/-</h6>
+            <ul>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+            </ul>
+            <button class="buy">Add to Cart</button>
+        </div>
+
+        <div class="contents">
+            <div class="fl">
+                <h3>Piece of garland</h3>
+                <box-icon name='heart' color="black" ></box-icon>
+            </div>
+            <img src="images/rose with white.jpg" alt=""  width="200px" height="200px">
+            <p> You are felling some piecefulness</p>
+            <h6>Rs. 900/-</h6>
+            <ul>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+            </ul>
+            <button class="buy">Add to Cart</button>
+        </div>
+
+        <div class="contents">
+            <div class="fl">
+                <h3>Angel of flower</h3>
+                <box-icon name='heart' color="black" ></box-icon>
+            </div>
+            <img src="images/rose.jpg" alt=""  width="200px" height="200px">
+            <p>You feel like an angel </p>
+            <h6>Rs. 1800/-</h6>
+            <ul>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+            </ul>
+            <button class="buy">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- basket of flower start -->
+<div class="Basket of flower" id="Basket of flower">
+    <h2 style="font-style: italic;">Basket of flower</h2>
+<div class="gallery">
+    <div class="contents">
+        <div class="fl">
+            <h3>Bouquet</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/basket of frienship.jpg" alt="" width="200px" height="200px">
+        <p>Yellow means your friendship are strong</p>
+        <h6>Rs. 1000/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+
+    <div class="contents">
+        <div class="fl">
+            <h3>Red with Purple </h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/basket of love.jpg" alt="" width="200px" height="200px">
+        <p>This is unique one</p>
+        <h6>Rs. 1900/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+
+
+    <div class="contents">
+        <div class="fl">
+            <h3>white with mix color flower</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/basket of peace.jpg" alt=""  width="200px" height="200px">
+        <p>to be a freshness feeling</p>
+        <h6>Rs. 2100/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+
+    <div class="contents">
+        <div class="fl">
+            <h3>Pink bouquet</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/pink basket.jpg" alt=""  width="200px" height="200px">
+        <p>To buy a product for your special person</p>
+        <h6>Rs. 300/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+
+    <div class="contents">
+        <div class="fl">
+            <h3>Daisy Bouquet</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/daisy.jpg" alt=""  width="200px" height="200px">
+        <p>To buy this for your fantastic day</p>
+        <h6>Rs. 1300/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+
+    <div class="contents">
+        <div class="fl">
+            <h3>Mix Flower</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/mix flowers.jpg" alt=""  width="200px" height="200px">
+        <p>All are good things made with god</p>
+        <h6>Rs. 2100/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+
+    <div class="contents">
+        <div class="fl">
+            <h3>Heartful red</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/FZ0007i.png" alt=""  width="200px" height="200px">
+        <p>To buy a bouquet with full of heart</p>
+        <h6>Rs. 900/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+
+    <div class="contents">
+        <div class="fl">
+            <h3>Arcat</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/arcat.jpg" alt=""  width="200px" height="200px">
+        <p>To Buy a arcat Bouquet</p>
+        <h6>Rs. 800/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Flower rings start -->
+
+<div class="flowerRings" id="flowerRings">
+    <h2 style="font-style: italic;">Flower Rings</h2>
+<div class="gallery">
+    <div class="contents">
+        <div class="fl">
+            <h3>Heart Flower Rings</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/heart.jpg" alt="" width="200px" height="200px">
+        <p>YOUR heart shown to your partner</p>
+        <h6>Rs. 2500/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+
+    <div class="contents">
+        <div class="fl">
+            <h3>Multi flower rings </h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/multi flower.jpg" alt="" width="200px" height="200px">
+        <p>MUlti flower Rings</p>
+        <h6>Rs. 1900/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+
+
+    <div class="contents">
+        <div class="fl">
+            <h3>Multi colors rings</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/multicolor.jpg" alt=""  width="200px" height="200px">
+        <p>Multi color rings</p>
+        <h6>Rs. 2100/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+
+    <div class="contents">
+        <div class="fl">
+            <h3>Red rose stand</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/red rose standing.jpg" alt=""  width="200px" height="200px">
+        <p>Red rose</p>
+        <h6>Rs. 1800/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+
+    <div class="contents">
+        <div class="fl">
+            <h3>Rose for peace</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/red rose.jpg" alt=""  width="200px" height="200px">
+        <p>Red rose for peaceful life </p>
+        <h6>Rs. 1300/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+
+    <div class="contents">
+        <div class="fl">
+            <h3>White decor rings</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/white decor flo.jpg" alt=""  width="200px" height="200px">
+        <p>White decor flower</p>
+        <h6>Rs. 1900/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+
+    <div class="contents">
+        <div class="fl">
+            <h3>White with leaf</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/white with leaf.jpg" alt=""  width="200px" height="200px">
+        <p>To rest in peace of nature</p>
+        <h6>Rs. 1500/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+
+    <div class="contents">
+        <div class="fl">
+            <h3>pink rings</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/pink rose.jpg" alt=""  width="200px" height="200px">
+        <p>pink Rose</p>
+        <h6>Rs. 800/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+</div>
+
+
+<!-- Bouquet start -->
+<div class="Bouquet" id="Bouquet">
+    <h2 style="font-style: italic;">Bouquet</h2>
+<div class="gallery">
+    <div class="contents">
+        <div class="fl">
+            <h3>Blue orchids</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/blue orchids.jpg" alt="" width="200px" height="200px">
+        <p>Blue Orchids flower bouquet </p>
+        <h6>Rs. 600/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+
+    <div class="contents">
+        <div class="fl">
+            <h3>Pastel</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/bouquet pastel.jpg" alt="" width="200px" height="200px">
+        <p>Pastel color bouquet</p>
+        <h6>Rs. 800/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+
+
+    <div class="contents">
+        <div class="fl">
+            <h3>Bridal red rose</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/bridal hand bouquet red.jpg" alt=""  width="200px" height="200px">
+        <p>Bridal red roses for lovable person</p>
+        <h6>Rs. 1500/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+
+    <div class="contents">
+        <div class="fl">
+            <h3>Bridal orange rose </h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/bridal hand bouquet-orange.jpg" alt=""  width="200px" height="200px">
+        <p>Orange roses for bridal</p>
+        <h6>Rs. 900/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+
+    <div class="contents">
+        <div class="fl">
+            <h3>White with flowers</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/bridal.jpg" alt=""  width="200px" height="200px">
+        <p>White with mix flower bouquet</p>
+        <h6>Rs. 1300/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+
+    <div class="contents">
+        <div class="fl">
+            <h3>Citrus & roses</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/citrus&red roses.jpg" alt=""  width="200px" height="200px">
+        <p>Citrus and mixed flowers</p>
+        <h6>Rs. 1200/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+
+    <div class="contents">
+        <div class="fl">
+            <h3>Daisy with roses</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/daisy with rose.jpg" alt=""  width="200px" height="200px">
+        <p>Daisy with roses flower bouquet</p>
+        <h6>Rs. 1500/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+
+    <div class="contents">
+        <div class="fl">
+            <h3>pink & red roses</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/exquisite rose.jpg" alt=""  width="200px" height="200px">
+        <p>pink & red roses for girlish love</p>
+        <h6>Rs. 1150/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+</div>
+
+
+<!-- Single flower-->
+<div class="Single flower" id="Single flower">
+    <h2 style="font-style: italic;">Single flower</h2>
+<div class="gallery">
+    <div class="contents">
+        <div class="fl">
+            <h3>Lavender</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/lavender.jpg" alt="" width="200px" height="200px">
+        <p>Lavender flower for bts fan</p>
+        <h6>Rs. 60/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+    <div class="contents">
+        <div class="fl">
+            <h3>Dark purple rose</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/dark purple rose.jpg" alt="" width="200px" height="200px">
+        <p>Dark purple roses</p>
+        <h6>Rs. 80/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+
+
+    <div class="contents">
+        <div class="fl">
+            <h3>lily</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/lily.jpg" alt=""  width="200px" height="200px">
+        <p>Lily for peace ful person</p>
+        <h6>Rs. 150/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+
+    <div class="contents">
+        <div class="fl">
+            <h3>Black rose</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/blaky rose.jpg" alt=""  width="200px" height="200px">
+        <p>Black is beauty in flowers</p>
+        <h6>Rs. 150/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+
+    <div class="contents">
+        <div class="fl">
+            <h3>Lotus</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/lotus.jpg" alt=""  width="200px" height="200px">
+        <p>Lotus flower for prayers</p>
+        <h6>Rs. 40/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+
+    <div class="contents">
+        <div class="fl">
+            <h3>White daisy</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/white daisy.jpg" alt=""  width="200px" height="200px">
+        <p>White daisy</p>
+        <h6>Rs. 50/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+
+    <div class="contents">
+        <div class="fl">
+            <h3>Sunflower</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/sunflower.jpg" alt=""  width="200px" height="200px">
+        <p>Sunflower</p>
+        <h6>Rs. 60/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+
+    <div class="contents">
+        <div class="fl">
+            <h3>pink tulip</h3>
+            <box-icon name='heart' color="black" ></box-icon>
+        </div>
+        <img src="images/tulip.jpg" alt=""  width="200px" height="200px">
+        <p>pink tulip</p>
+        <h6>Rs. 110/-</h6>
+        <ul>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+            <li class="star"><box-icon name='star'></box-icon></li>
+        </ul>
+        <button class="buy">Add to Cart</button>
+    </div>
+</div>
+</div>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>

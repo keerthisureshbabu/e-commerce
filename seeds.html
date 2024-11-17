@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divine Paradise</title>
+    <link rel="icon" href="images/icon2.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+     *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     }
+     .name{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        width: 100%;
+     }
+    .h1{
+        font-size: xx-large;
+        font-weight: bold;
+        font-style: italic;
+        display: flex;
+        margin-left: 600px;
+     }
+     .iconnav{
+        text-decoration: none;
+        font-size: 15px;
+        position: relative;
+        margin-right: 30px;
+   }
+    .badge{
+        position: absolute;
+        top: -10px;
+        right: -8px;
+        padding: 5px 10px;
+        border-radius: 50%;
+        background: red;
+        color: white;
+    }
+     .navpic{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        justify-content: space-between;
+        align-items: center;
+     }
+     .content{
+        margin: 30px;
+
+     }
+     .img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+     }
+    .para{
+        margin-top: 20px;
+        margin-left: 10px;
+     }
+     .container {
+         position: relative;
+         width: 50%;
+         max-width: 400px;
+         max-height: 600px;
+     }
+    .image {
+        display: block;
+        width: 100%;
+        height: auto;
+     }
+    .overlay {
+         position: absolute; 
+         bottom: 0; 
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5); /* Black see-through */
+        color: #f1f1f1; 
+        width: 100%;
+        transition: .5s ease;
+        opacity:0;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+    .container:hover .overlay {
+        opacity: 1;
+    }
+    .gallery{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    .contents{
+       width: 300px;
+       margin: 15px;
+       box-sizing: border-box;
+       float: left;
+       text-align: center;
+       border-radius: 20px;
+       cursor: pointer;
+       padding-top: 10px;
+       box-shadow: 0 14px 20px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22);
+       transition: .4s;
+       background: #f2f2f2;
+    }
+    .contents:hover{
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),0 3px 6px rgba(0, 0, 0, 0.23);
+       transform: translate(0px,-20px);
+    }
+    .fl{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .heart:hover{
+        background-color: red;
+    }
+    img{
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        padding: 20px;
+    }
+    p{
+        text-align: center;
+        padding-top: 0 8px;
+    }
+    h6{
+        font-size: 26px;
+        text-align: center;
+        margin: 0;
+        padding: 5px;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        padding-left: 20%;
+        margin: 7px;
+    }
+    .star{
+        margin: 5px;
+        transition: .4s;
+    }
+    .buy{
+        margin: 10px;
+    }
+   
+    </style>
+</head>
+<body>
+    <header class="header">
+    <div class="name">
+        <div class="h1">Seeds</div>
+        <a href="#" class="iconnav"><box-icon name='shopping-bag'size="md"></box-icon><br><span class="badge" color="black">0</span>Cart</a>
+        </div>
+    </header>
+    <div class="garland" id="garland">
+    <div class="gallery">
+        <div class="contents">
+            <div class="fl">
+                <h3>Pumpkin seeds</h3>
+                <span class="heart"><box-icon name='heart' color="black" ></box-icon></span>
+            </div>
+            <img src="images/pumpkinseeds.jpg" alt="" width="200px" height="200px">
+            <p>Pumpkin seeds</p>
+            <h6> 1kg-Rs. 100/-</h6>
+            <ul>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+            </ul>
+            <button class="buy">Add to Cart</button>
+        </div>
+    
+        <div class="contents">
+            <div class="fl">
+                <h3>flax seed</h3>
+                <box-icon name='heart' color="black" ></box-icon>
+            </div>
+            <img src="images/flax.jpg" alt="" width="200px" height="200px">
+            <p>Flax seed</p>
+            <h6> 1kg-Rs. 200/-</h6>
+            <ul>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+            </ul>
+            <button class="buy">Add to Cart</button>
+        </div>
+
+    
+        <div class="contents">
+            <div class="fl">
+                <h3>Sesame seeds</h3>
+                <box-icon name='heart' color="black" ></box-icon>
+            </div>
+            <img src="images/sesame.webp" alt=""  width="200px" height="200px">
+            <p>Sesame seeds</p>
+            <h6>1kg-Rs. 150/-</h6>
+            <ul>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+            </ul>
+            <button class="buy">Add to Cart</button>
+        </div>
+
+        <div class="contents">
+            <div class="fl">
+                <h3>poppy seeds</h3>
+                <box-icon name='heart' color="black" ></box-icon>
+            </div>
+            <img src="images/poppy.webp" alt=""  width="200px" height="200px">
+            <p>poppy seeds</p>
+            <h6>1kg-Rs. 199/-</h6>
+            <ul>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+            </ul>
+            <button class="buy">Add to Cart</button>
+        </div>
+
+        <div class="contents">
+            <div class="fl">
+                <h3>sunflower seeds</h3>
+                <box-icon name='heart' color="black" ></box-icon>
+            </div>
+            <img src="images/sunflowerseeds.webp" alt=""  width="200px" height="200px">
+            <p>Sunflower seeds</p>
+            <h6>1kg-Rs. 99/-</h6>
+            <ul>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+            </ul>
+            <button class="buy">Add to Cart</button>
+        </div>
+
+        <div class="contents">
+            <div class="fl">
+                <h3>Psyllium seeds</h3>
+                <box-icon name='heart' color="black" ></box-icon>
+            </div>
+            <img src="images/psylliumseeds.jpg" alt=""  width="200px" height="200px">
+            <p>Psyllium seeds</p>
+            <h6>1kg-Rs. 80/-</h6>
+            <ul>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+            </ul>
+            <button class="buy">Add to Cart</button>
+        </div>
+
+        <div class="contents">
+            <div class="fl">
+                <h3>chia seeds</h3>
+                <box-icon name='heart' color="black" ></box-icon>
+            </div>
+            <img src="images/chia.jpg" alt=""  width="200px" height="200px">
+            <p>Strings of perals</p>
+            <h6>1kg-Rs. 99/-</h6>
+            <ul>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+            </ul>
+            <button class="buy">Add to Cart</button>
+        </div>
+
+        <div class="contents">
+            <div class="fl">
+                <h3>Cosmos seeds</h3>
+                <box-icon name='heart' color="black" ></box-icon>
+            </div>
+            <img src="images/cosmos.jpg" alt=""  width="200px" height="200px">
+            <p>Cosmos seeds.</p>
+            <h6>1kg-Rs. 199/-</h6>
+            <ul>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+            </ul>
+            <button class="buy">Add to Cart</button>
+        </div>
+
+        <div class="contents">
+            <div class="fl">
+                <h3>Sabja seeds</h3>
+                <box-icon name='heart' color="black" ></box-icon>
+            </div>
+            <img src="images/sabjaseed.jpg" alt=""  width="200px" height="200px">
+            <p>Sabja seeds.</p>
+            <h6>1kg-Rs. 59/-</h6>
+            <ul>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon type='solid' name='star' color="yellow"></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+                <li class="star"><box-icon name='star'></box-icon></li>
+            </ul>
+            <button class="buy">Add to Cart</button>
+        </div>
+
+</div>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>

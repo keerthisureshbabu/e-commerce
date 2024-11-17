@@ -1,0 +1,88 @@
+:root{
+    --pink:pink;
+}
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+html{
+    font-size: 150%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow: hidden;
+}
+header{
+    padding: 2px 9%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgb(16, 17, 16);
+    position: fixed;
+    top: 20px;left: 0;right: 0;
+}
+header img{
+    border: 1px solid white;
+    border-radius: 50%;
+}
+header .navbar a{
+    font-size: 2 rem;
+    padding: 0 1 .5 rem;
+    color: #666;
+}
+header .navbar a:hover{
+    color: var(--pink);
+}
+.search bar{
+    display: flex;
+    align-items: left;
+    position: relative;
+}
+#searchinput{
+    padding: 8px;
+    margin: 10px;
+    /* border: 5px soild blue; */
+    /* border-radius: 20px; */
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 40px;
+    left: 1000px;
+    font: 50px;
+    
+}
+.search button{
+    width: 0;
+    height: 0;
+    cursor: pointer;
+    margin: 20px;
+    position: absolute;
+    top: 40px;
+    left: 780px;
+    border: 5px soild black;
+    
+}
+.search button img{
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    top: -10px;
+    padding: 10px;
+    right: -25px;
+}
+.icons a{
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+    background-color: aquamarine;
+}
+.icons a:hover{
+    color: var(--pink);
+}
+
